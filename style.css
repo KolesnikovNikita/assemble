@@ -1,0 +1,57 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/* Variables */
+
+:root {
+	--basic-black: #000;
+	--basic-white: #fff;
+	--basic-blue: #2472e8;
+	--basic-yellow: #e9e008;
+	--basic-nude: #f3eee8;
+}
+
+body {
+	/* Настройки текста */
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	overflow-wrap: break-word;
+	color: black;
+	background-color: white;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
