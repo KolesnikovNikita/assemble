@@ -4,13 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<title>Member Onboarding_Questions_Input States</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-		<title>Member Onboarding_Questions_Input States</title>
 		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body>
@@ -21,7 +21,7 @@
 						<img src="../img/logo.svg" width="150" height="30" alt="logo" />
 					</div>
 					<div class="sign-up">
-						<a href="#" class="log-out link">Log out</a>
+						<a href="#" class="header-link">Log out</a>
 					</div>
 				</header>
             </div>
@@ -29,50 +29,61 @@
 				<main class="main-wrapper">
 					<h2 class="visually-hidden">Assemble Coach and Member statement</h2>
 					<div class="title-wrapper">
-						<h1 class="title title-mobile">
+						<h1 class="title title-mobile log-title">
 							Welcome to Assemble!
 						</h1>
+                        </div>
+
+                        <div class="description-step-wrapper">
                         <p>
                             Tell us a bit more about yourself
                         </p>
-                        <p class="step-number-style">
+                        <h4 class="step-number-style">
                             Step 1 of 4
-                        </p>
+                        </h4>
 					</div>
-                    <hr>
+
                     <div class="body-wrapper">
-                        <form>
-                            <div class="question-block">
+                        <form class='member-registration-form'>
+                            <div class="wrapper-column">
                                 <input type="text" id="first-name" name="first-name" placeholder="First Name"/>
-                                <input type="text" id="second-name" name="second-name" placeholder="Second Name"/>
+                                <input type="text" id="second-name" name="second-name" placeholder="Last Name"/>
                             </div>
-                            <div class="question-block">
-                                <label>What hospital do you work at?</label>
-                                <div>
-                                    <input type="radio" id="nyu-landone-health" name="nyu-landone-health" value="nyu-landone-health" />
-                                    <label for="nyu-landone-health">NYU Langone Health</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="robert-wood-jonson" name="robert-wood-jonson" value="robert-wood-jonson" />
-                                    <label for="robert-wood-jonson">Robert Wood Johnson</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="mount-sinai" name="mount-sinai" value="mount-sinai" />
-                                    <label for="mount-sinai">Mount Sinai</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="cornell-weill" name="cornell-weill" value="cornell-weill" />
-                                    <label for="cornell-weill">Cornell Weill</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="other-place" name="other-place" value="other-place" />
-                                    <label for="other-place">Other:</label>
-                                    <input type="text" id="other-place-input" name="other-place-input" />
-                                </div>
+                            <div class="wrapper-column">
+                                <fieldset>
+                                <legend>What hospital do you work at?</legend>
+                                <ul class="group-list">
+                                    <li class="member-option">
+                                        <input type="radio" class='visually-hidden member-input-radio' id="nyu-landone-health" name="radio-group" value="nyu-landone-health" />
+                                        <label for="nyu-landone-health">NYU Langone Health</label>
+                                    </li>
+                                    <li class="member-option">
+                                        <input type="radio" class='visually-hidden member-input-radio' id="robert-wood-jonson" name="radio-group" value="robert-wood-jonson" />
+                                        <label for="robert-wood-jonson">Robert Wood Johnson</label>
+                                    </li>
+                                    <li class="member-option">
+                                        <input type="radio" class='visually-hidden member-input-radio' id="mount-sinai" name="radio-group" value="mount-sinai" />
+                                        <label for="mount-sinai">Mount Sinai</label>
+                                    </li>
+                                    <li class="member-option">
+                                         <input type="radio" class='visually-hidden member-input-radio' id="cornell-weill" name="radio-group" value="cornell-weill" />
+                                        <label for="cornell-weill">Cornell Weill</label>
+                                    </li>
+                                    <li class="member-option">
+                                        <div class="other-option-wrapper">
+                                        <input type="radio" class='visually-hidden member-input-radio' id='other-place' name="radio-group" value="other-place" />
+                                        <label for="other-place">Other:</label>                                            
+                                        <input type="text" name="other-place-input" />
+                                        </div> 
+                                    </li>                  
+                                </ul>
+                                </fieldset>
+                                
                             </div>
                             
-                            <div class="question-block">
-                                <label>How long have you been working?</label>
+                            <!-- <div class="question-block">
+                                <fieldset>
+                                <legend>How long have you been working?</legend>
                                 <div>
                                     <input type="radio" id="0-6months" name="0-6months" value="0-6months" />
                                     <label for="0-6months">0 – 6 months</label>
@@ -89,10 +100,11 @@
                                     <input type="radio" id="2plus-yers" name="2plus-yers" value="2plus-yers" />
                                     <label for="2plus-yers">2+ years</label>
                                 </div>
-                            </div>
+                                </fieldset>
+                            </div> -->
                             
-                            <div class="question-block">
-                                <label>What’s your specialty?</label>
+                            <!-- <div class="wrapper-column">
+                                <legend>What’s your specialty?</legend>
                                 <div>
                                     <input type="checkbox" id="cardiology" name="cardiology" value="cardiology" />
                                     <label for="cardiology">Cardiology</label>
@@ -136,7 +148,7 @@
                                 </div>
                             </div>
                             
-                            <div class="question-block">
+                            <div class="wrapper-column">
                                 <div>
                                     <label for="birthday">Birthday:</label>
                                     <input type="text" id="birthday" name="birthday" placeholder="MM / DD / YYYY"/>
@@ -150,8 +162,8 @@
                                     <input type="text" id="phone" name="phone" placeholder="(   )   -"/>                     
                                 </div>
                             </div>
-                            <div class="question-block">
-                                <label>Race/ethnicity</label>
+                            <div class="wrapper-column">
+                                <legend>Race/ethnicity</legend>
                                 <div>
                                     <input type="checkbox" id="american-indian-alaska" name="american-indian-alaska" value="american-indian-alaska" />
                                     <label for="american-indian-alaska">American Indian or Alaska Native</label>
@@ -186,8 +198,8 @@
                                     <input type="text" id="other-ethnicity-input" name="other-ethnicity-input" />
                                 </div>
                             </div>
-                            <div class="question-block">
-                                <label>Sex</label>
+                            <div class="wrapper-column">
+                                <legend>Sex</legend>
                                 <div>
                                     <input type="radio" id="female" name="female" value="female" />
                                     <label for="female">Female</label>
@@ -203,19 +215,11 @@
                             </div>
                             <div>
                                 <button type="submit">Match me with a coach</button>
-                            </div>
+                            </div> -->
                         </form>
                         
                     </div>
                         
-                
-                
-                
-                
-                
-                
-                
-                
                 <footer class="footer">
 					<div class="footer-wrapper">
 						<div class="footer-logo">
