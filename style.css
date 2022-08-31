@@ -21,6 +21,7 @@ html {
 }
 
 body {
+	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
@@ -58,6 +59,13 @@ a {
 
 .body-wrapper {
 	background-color: var(--basic-nude);
+}
+
+.logo {
+	background-image: url('./img/logo.svg');
+	width: 150px;
+	height: 30px;
+	background-repeat: no-repeat;
 }
 
 .title {
@@ -478,11 +486,142 @@ a {
 	justify-content: space-between;
 }
 
+/* Valery Style */
+
+hr {
+	margin: 50px 0px 50px 0px;
+	border: none;
+	height: 1px;
+	background-color: var(--basic-black);
+}
+h3 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 120%;
+}
+.wrapper-column.coach-match {
+	padding: 0px 20px;
+	margin: 0px;
+}
+.coach-match button {
+	width: 207px;
+	height: 39px;
+	margin: 30px 20px 60px 20px;
+}
+.profile-item-display {
+	margin-bottom: 30px;
+}
+.profile-item-display b {
+	margin-top: 60px;
+	padding: 0px;
+}
+.profile-item-display p {
+	margin: 0px;
+	padding: 0px;
+}
+.calendar-box {
+	background: var(--basic-white);
+	margin: 50px auto 50px auto;
+	width: 335px;
+	height: 374px;
+}
+.time-chooser button {
+	width: 141px;
+	height: 39px;
+	margin-bottom: 50px;
+	position: relative;
+	left: 204px;
+	bottom: 0px;
+}
+.wrapper-column.complete-profile {
+	border: none;
+	padding: 0;
+	margin: 0px 20px;
+}
+.complete-profile-form ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.complete-profile-form label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
+	padding-left: 26px;
+	color: var(--basic-black);
+}
+.complete-profile-form legend {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: -0.01em;
+	color: var(--special-color);
+	margin-bottom: 20px;
+}
+.complete-profile-form fieldset {
+	border: none;
+	padding: 0;
+}
+.complete-profile-form button {
+	width: 202px;
+	height: 39px;
+	margin-bottom: 50px;
+	padding: 10px;
+}
+.complete-profile-form span {
+	width: 114px;
+	height: 19px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: -0.01em;
+}
+.image-wrapper input {
+	display: none;
+}
+.image-wrapper label {
+	padding: 0;
+}
+/* LogOut Modal Style */
+.modal {
+	width: 335px;
+	height: 409px;
+	background: var(--basic-nude);
+}
+.logout-container {
+	margin: 50px 30px;
+}
+.logout-container p {
+	padding: 0;
+	margin: 30px 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: -0.01em;
+}
+.logout-container button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	width: 176px;
+	height: 39px;
+	margin-bottom: 20px;
+}
+
+/* Valery Style */
+
 /* --------- Media Queries --------- */
 
 @media screen and (min-width: 768px) {
 	.tablet-style-wrapper {
 		display: flex;
+		border-top: 0.5px solid var(--basic-black);
 	}
 
 	.image-wrapper-1 {
@@ -581,5 +720,76 @@ a {
 
 	.header-wrapper {
 		padding: 25px 30px 20px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.logo {
+		background-image: url('./img/logo-tablet.svg');
+		width: 250px;
+		height: 50px;
+	}
+
+	.header-wrapper {
+		padding-right: 60px;
+		padding-left: 60px;
+		padding-bottom: 30px;
+	}
+
+	.title-mobile {
+		font-size: 64px;
+		line-height: 70px;
+	}
+
+	.image-wrapper-1 {
+		background-image: url('./img/main-image-desktop.svg');
+		min-width: 476px;
+		min-height: 455px;
+		background-size: cover;
+	}
+
+	.image-wrapper-2 {
+		display: none;
+		min-width: 402px;
+		min-height: 538px;
+		background-size: cover;
+		background-image: url('./img/main-image2-desktop.svg');
+	}
+
+	.title-wrapper {
+		padding: 60px 60px 60px 105px;
+	}
+
+	.description-wrapper p {
+		font-size: 32px;
+		line-height: 38px;
+		padding: 0;
+	}
+
+	.description-wrapper {
+		padding-top: 50px;
+		padding-left: 60px;
+		padding-bottom: 50px;
+		padding-right: 75px;
+		max-width: 920px;
+	}
+
+	.form-wrapper {
+		margin-top: 0;
+	}
+
+	.desktop-wrapper {
+		display: flex;
+	}
+
+	.tablet-style-wrapper {
+		border: none;
+	}
+
+	.explaining-text {
+		padding-top: 50px;
+		padding-right: 60px;
+		padding-left: 30px;
+		padding-bottom: 100px;
 	}
 }
