@@ -123,6 +123,7 @@ a {
 
 .image-wrapper-2 {
 	height: 359px;
+	min-width: 359px;
 	background-image: url('./img/main-image2.svg');
 	background-position: 0 0;
 	background-repeat: no-repeat;
@@ -268,12 +269,12 @@ a {
 
 .title-wrapper,
 .description-wrapper {
-	padding: 0 1.25rem;
+	padding: 0 20px;
 }
 
 .explaining-text {
 	text-align: center;
-	padding: 3.125rem 5rem;
+	padding: 60px 80px 50px;
 }
 
 .span-wrapper {
@@ -485,10 +486,17 @@ a {
 	}
 
 	.image-wrapper-1 {
+		background-image: url('./img/main-image-tablet.svg');
 		order: -1;
 		min-height: 427px;
 		min-width: 333px;
-		background-size: auto 100%;
+		background-size: 100% auto;
+	}
+
+	.image-wrapper-2 {
+		min-height: 347px;
+		min-width: 374px;
+		background-size: contain;
 	}
 
 	.title-wrapper {
@@ -499,5 +507,79 @@ a {
 
 	.main-title {
 		padding: 0;
+	}
+
+	.description-wrapper p {
+		letter-spacing: -0.01em;
+	}
+
+	.description-wrapper {
+		padding: 0 30px;
+	}
+
+	.explaining-text {
+		padding: 50px 80px 50px 90px;
+	}
+
+	.description-wrapper p {
+		padding-bottom: 50px;
+	}
+
+	.form-wrapper {
+		margin-top: -55px;
+		transform: scale(1);
+		display: flex;
+		border-top: 0.5px solid var(--basic-black);
+	}
+
+	.user-type-wrapper {
+		flex-direction: column;
+		border: none;
+	}
+
+	.member-wrapper {
+		border: none;
+		padding-bottom: 0;
+	}
+
+	.left-side {
+		min-width: 250px;
+		border-right: 0.5px solid var(--basic-black);
+	}
+
+	.right-side {
+		padding-top: 115px;
+		width: 100%;
+	}
+
+	.coach-wrapper {
+		padding-top: 20px;
+	}
+
+	.footer {
+		position: relative;
+		padding: 50px 30px;
+	}
+
+	.footer-wrapper {
+		display: flex;
+	}
+
+	.copyright {
+		position: absolute;
+		left: 30px;
+		bottom: 50px;
+	}
+
+	.footer-logo {
+		margin-right: 70px;
+		padding-bottom: 0;
+	}
+	.friend-link {
+		padding: 0;
+	}
+
+	.header-wrapper {
+		padding: 25px 30px 20px;
 	}
 }
