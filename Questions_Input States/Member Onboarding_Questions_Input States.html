@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Member Onboarding_Questions_Input States</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500;700&display=swap"
@@ -24,203 +24,430 @@
 						<a href="#" class="header-link">Log out</a>
 					</div>
 				</header>
-            </div>
+			</div>
 			<div class="body-wrapper">
 				<main class="main-wrapper">
 					<h2 class="visually-hidden">Assemble Coach and Member statement</h2>
 					<div class="title-wrapper">
-						<h1 class="title title-mobile log-title">
-							Welcome to Assemble!
-						</h1>
-                        </div>
-
-                        <div class="description-step-wrapper">
-                        <p>
-                            Tell us a bit more about yourself
-                        </p>
-                        <h4 class="step-number-style">
-                            Step 1 of 4
-                        </h4>
+						<h1 class="title title-mobile log-title">Welcome to Assemble!</h1>
 					</div>
 
-                    <div class="body-wrapper">
-                        <form class='member-registration-form'>
-                            <div class="wrapper-column">
-                                <input type="text" id="first-name" name="first-name" placeholder="First Name"/>
-                                <input type="text" id="second-name" name="second-name" placeholder="Last Name"/>
-                            </div>
-                            <div class="wrapper-column">
-                                <fieldset>
-                                <legend>What hospital do you work at?</legend>
-                                <ul class="group-list">
-                                    <li class="member-option">
-                                        <input type="radio" class='visually-hidden member-input-radio' id="nyu-landone-health" name="radio-group" value="nyu-landone-health" />
-                                        <label for="nyu-landone-health">NYU Langone Health</label>
-                                    </li>
-                                    <li class="member-option">
-                                        <input type="radio" class='visually-hidden member-input-radio' id="robert-wood-jonson" name="radio-group" value="robert-wood-jonson" />
-                                        <label for="robert-wood-jonson">Robert Wood Johnson</label>
-                                    </li>
-                                    <li class="member-option">
-                                        <input type="radio" class='visually-hidden member-input-radio' id="mount-sinai" name="radio-group" value="mount-sinai" />
-                                        <label for="mount-sinai">Mount Sinai</label>
-                                    </li>
-                                    <li class="member-option">
-                                         <input type="radio" class='visually-hidden member-input-radio' id="cornell-weill" name="radio-group" value="cornell-weill" />
-                                        <label for="cornell-weill">Cornell Weill</label>
-                                    </li>
-                                    <li class="member-option">
-                                        <div class="other-option-wrapper">
-                                        <input type="radio" class='visually-hidden member-input-radio' id='other-place' name="radio-group" value="other-place" />
-                                        <label for="other-place">Other:</label>                                            
-                                        <input type="text" name="other-place-input" />
-                                        </div> 
-                                    </li>                  
-                                </ul>
-                                </fieldset>
-                                
-                            </div>
-                            
-                            <!-- <div class="question-block">
-                                <fieldset>
-                                <legend>How long have you been working?</legend>
-                                <div>
-                                    <input type="radio" id="0-6months" name="0-6months" value="0-6months" />
-                                    <label for="0-6months">0 – 6 months</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="6months-1year" name="6months-1year" value="6months-1year" />
-                                    <label for="6months-1year">6 months – 1 year</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="1-2years" name="1-2years" value="1-2years" />
-                                    <label for="1-2years">1 – 2 years</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="2plus-yers" name="2plus-yers" value="2plus-yers" />
-                                    <label for="2plus-yers">2+ years</label>
-                                </div>
-                                </fieldset>
-                            </div> -->
-                            
-                            <!-- <div class="wrapper-column">
-                                <legend>What’s your specialty?</legend>
-                                <div>
-                                    <input type="checkbox" id="cardiology" name="cardiology" value="cardiology" />
-                                    <label for="cardiology">Cardiology</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="pediatrics" name="pediatrics" value="pediatrics" />
-                                    <label for="pediatrics">Pediatrics</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="med-surge" name="med-surge" value="med-surge" />
-                                    <label for="med-surge">Med surge</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="icu" name="icu" value="icu" />
-                                    <label for="icu">ICU</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="operating-room" name="emergency-room" value="emergency-room" />
-                                    <label for="operating-room">Emergency room</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="operating-room" name="operating-room" value="operating-room" />
-                                    <label for="operating-room">Operating room</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="pacu" name="pacu" value="pacu" />
-                                    <label for="pacu">PACU</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="maternal-and-child-health" name="maternal-and-child-health" value="maternal-and-child-health" />
-                                    <label for="maternal-and-child-health">Maternal and child health</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="float" name="float" value="float" />
-                                    <label for="float">Float</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="other-specialty" name="other-specialty" value="other-specialty" />
-                                    <label for="other-specialty">Other:</label>
-                                    <input type="text" id="other-specialty-input" name="other-specialty-input" />
-                                </div>
-                            </div>
-                            
-                            <div class="wrapper-column">
-                                <div>
-                                    <label for="birthday">Birthday:</label>
-                                    <input type="text" id="birthday" name="birthday" placeholder="MM / DD / YYYY"/>
-                                </div>
-                                <div>
-                                    <label for="city-and-state">City and state</label>
-                                    <input type="text" id="city-and-state" name="city-and-state" placeholder=""/>
-                                </div>
-                                <div>
-                                    <label for="phone">Phone number</label>
-                                    <input type="text" id="phone" name="phone" placeholder="(   )   -"/>                     
-                                </div>
-                            </div>
-                            <div class="wrapper-column">
-                                <legend>Race/ethnicity</legend>
-                                <div>
-                                    <input type="checkbox" id="american-indian-alaska" name="american-indian-alaska" value="american-indian-alaska" />
-                                    <label for="american-indian-alaska">American Indian or Alaska Native</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="asian" name="asian" value="asian" />
-                                    <label for="asian">Asian</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="black-or-afroamerican" name="black-or-afroamerican" value="black-or-afroamerican" />
-                                    <label for="black-or-afroamerican">Black or African American</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="hispanic-or-latino" name="hispanic-or-latino" value="hispanic-or-latino" />
-                                    <label for="hispanic-or-latino">Hispanic or Latino</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="hawaiian-or-other-pacific" name="hawaiian-or-other-pacific" value="hawaiian-or-other-pacific" />
-                                    <label for="hawaiian-or-other-pacific">Native Hawaiian or Other Pacific Islander</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="white" name="white" value="white" />
-                                    <label for="white">White</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="not-to-answer" name="not-to-answer" value="not-to-answer" />
-                                    <label for="not-to-answer">Prefer not to answer</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="other-ethnicity" name="other-ethnicity" value="other-ethnicity" />
-                                    <label for="other-ethnicity">Other:</label>
-                                    <input type="text" id="other-ethnicity-input" name="other-ethnicity-input" />
-                                </div>
-                            </div>
-                            <div class="wrapper-column">
-                                <legend>Sex</legend>
-                                <div>
-                                    <input type="radio" id="female" name="female" value="female" />
-                                    <label for="female">Female</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="male" name="male" value="male" />
-                                    <label for="male">Male</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="1-not-to-answer-sex" name="1-not-to-answer-sex" value="1-not-to-answer-sex" />
-                                    <label for="1-not-to-answer-sex">Prefer not to answer</label>
-                                </div>
-                            </div>
-                            <div>
-                                <button type="submit">Match me with a coach</button>
-                            </div> -->
-                        </form>
-                        
-                    </div>
-                        
-                <footer class="footer">
+					<div class="description-step-wrapper">
+						<p>Tell us a bit more about yourself</p>
+						<h4 class="step-number-style">Step 1 of 4</h4>
+					</div>
+
+					<div class="body-wrapper">
+						<form class="member-registration-form">
+							<div class="wrapper-column">
+								<input
+									type="text"
+									id="first-name"
+									name="first-name"
+									placeholder="First Name"
+								/>
+								<input
+									type="text"
+									id="second-name"
+									name="second-name"
+									placeholder="Last Name"
+								/>
+							</div>
+							<div class="wrapper-column">
+								<fieldset>
+									<legend>What hospital do you work at?</legend>
+									<ul class="group-list">
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="nyu-landone-health"
+												name="radio-group"
+												value="nyu-landone-health"
+											/>
+											<label for="nyu-landone-health">NYU Langone Health</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="robert-wood-jonson"
+												name="radio-group"
+												value="robert-wood-jonson"
+											/>
+											<label for="robert-wood-jonson"
+												>Robert Wood Johnson</label
+											>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="mount-sinai"
+												name="radio-group"
+												value="mount-sinai"
+											/>
+											<label for="mount-sinai">Mount Sinai</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="cornell-weill"
+												name="radio-group"
+												value="cornell-weill"
+											/>
+											<label for="cornell-weill">Cornell Weill</label>
+										</li>
+										<li class="member-option">
+											<div class="other-option-wrapper">
+												<input
+													type="radio"
+													class="visually-hidden member-input-radio"
+													id="other-place"
+													name="radio-group"
+													value="other-place"
+												/>
+												<label for="other-place">Other:</label>
+												<input type="text" name="other-place-input" />
+											</div>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+
+							<div class="wrapper-column">
+								<fieldset>
+									<legend>How long have you been working?</legend>
+									<ul class="group-list">
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="0-6months"
+												name="radio-group1"
+												value="0-6months"
+											/>
+											<label for="0-6months">0 – 6 months</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="6months-1year"
+												name="radio-group1"
+												value="6months-1year"
+											/>
+											<label for="6months-1year">6 months – 1 year</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="1-2years"
+												name="radio-group1"
+												value="1-2years"
+											/>
+											<label for="1-2years">1 - 2 years</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="2plus-years"
+												name="radio-group1"
+												value="2plus-years"
+											/>
+											<label for="2plus-years">2+ years</label>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+
+							<div class="wrapper-column">
+								<fieldset>
+									<legend>What’s your specialty?</legend>
+									<ul class="group-list">
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="cardiology"
+												name="checkbox-group"
+												value="cardiology"
+											/>
+											<label for="cardiology">Cardiology</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="pediatrics"
+												name="checkbox-group"
+												value="pediatrics"
+											/>
+											<label for="pediatrics">Pediatrics</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="med-surge"
+												name="checkbox-group"
+												value="med-surge"
+											/>
+											<label for="med-surge">Med surge</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="icu"
+												name="checkbox-group"
+												value="icu"
+											/>
+											<label for="icu">ICU</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="emergency-room"
+												name="checkbox-group"
+												value="emergency-room"
+											/>
+											<label for="emergency-room">Emergency room</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="operating-room"
+												name="checkbox-group"
+												value="operating-room"
+											/>
+											<label for="operating-room">Operating room</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="pacu"
+												name="checkbox-group"
+												value="pacu"
+											/>
+											<label for="pacu">PACU</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="maternal-and-child-health"
+												name="checkbox-group"
+												value="maternal-and-child-health"
+											/>
+											<label for="maternal-and-child-health"
+												>Maternal and child health</label
+											>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="float"
+												name="checkbox-group"
+												value="float"
+											/>
+											<label for="float">Float</label>
+										</li>
+										<li class="member-option">
+											<div class="other-option-wrapper">
+												<input
+													type="radio"
+													class="visually-hidden member-input-checkbox"
+													id="other-specialty"
+													name="checkbox-group"
+													value="other-specialty"
+												/>
+												<label for="other-specialty">Other:</label>
+												<input type="text" name="other-specialty-input" />
+											</div>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+
+							<div class="wrapper-column">
+								<legend>Birthday</legend>
+								<input
+									type="date"
+									id="birthday"
+									name="birthday"
+									placeholder="MM / DD / YYYY"
+								/>
+								<legend>City and state</legend>
+								<input
+									type="text"
+									id="city-and-state"
+									name="city-and-state"
+									placeholder=""
+								/>
+								<legend>Phone number</legend>
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+									placeholder="(   )   -"
+								/>
+							</div>
+
+							<div class="wrapper-column">
+								<fieldset>
+									<legend>Race/ethnicity</legend>
+									<ul class="group-list">
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="american-indian-alaska"
+												name="checkbox-group1"
+												value="american-indian-alaska"
+											/>
+											<label for="american-indian-alaska"
+												>American Indian or Alaska Native</label
+											>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="asian"
+												name="checkbox-group1"
+												value="asian"
+											/>
+											<label for="asian">Asian</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="black-or-afroamerican"
+												name="checkbox-group1"
+												value="black-or-afroamerican"
+											/>
+											<label for="black-or-afroamerican"
+												>Black or African American</label
+											>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="hispanic-or-latino"
+												name="checkbox-group1"
+												value="hispanic-or-latino"
+											/>
+											<label for="hispanic-or-latino">Hispanic or Latino</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="hawaiian-or-other-pacific"
+												name="checkbox-group1"
+												value="hawaiian-or-other-pacific"
+											/>
+											<label for="hawaiian-or-other-pacific"
+												>Native Hawaiian or Other Pacific Islander</label
+											>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="white"
+												name="checkbox-group1"
+												value="white"
+											/>
+											<label for="white">White</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-checkbox"
+												id="not-to-answer"
+												name="checkbox-group1"
+												value="not-to-answer"
+											/>
+											<label for="not-to-answer">Prefer not to answer</label>
+										</li>
+										<li class="member-option">
+											<div class="other-option-wrapper">
+												<input
+													type="radio"
+													class="visually-hidden member-input-checkbox"
+													id="other-ethnicity"
+													name="checkbox-group1"
+													value="other-ethnicity"
+												/>
+												<label for="other-ethnicity">Other:</label>
+												<input type="text" name="other-ethnicity-input" />
+											</div>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+
+							<div class="wrapper-column">
+								<fieldset>
+									<legend>Sex</legend>
+									<ul class="group-list">
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="female"
+												name="radio-group2"
+												value="0-6months"
+											/>
+											<label for="female">Female</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="male"
+												name="radio-group2"
+												value="male"
+											/>
+											<label for="male">Male</label>
+										</li>
+										<li class="member-option">
+											<input
+												type="radio"
+												class="visually-hidden member-input-radio"
+												id="not-to-answer-sex"
+												name="radio-group2"
+												value="not-to-answer-sex"
+											/>
+											<label for="not-to-answer-sex"
+												>Prefer not to answer</label
+											>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+
+							<div>
+								<button class="button" type="submit">
+									Match me with a coach
+								</button>
+							</div>
+						</form>
+					</div>
+				</main>
+				<footer class="footer">
 					<div class="footer-wrapper">
 						<div class="footer-logo">
 							<img
@@ -230,7 +457,7 @@
 								alt="logo"
 							/>
 						</div>
-						<p>
+						<p class="hospital-link">
 							Want to get your hospital added as a training site?<a
 								href="#"
 								class="link-style"
@@ -238,7 +465,7 @@
 								Refer a hospital</a
 							>
 						</p>
-						<p>
+						<p class="friend-link">
 							Know someone that would make an great coach?
 							<a href="#" class="link-style"> Refer a friend</a>
 						</p>
