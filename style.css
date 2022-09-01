@@ -116,6 +116,11 @@ a {
 	padding-bottom: 50px;
 }
 
+.log-title {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
 .assemble-blue {
 	color: var(--basic-blue);
 }
@@ -371,11 +376,6 @@ a {
 	padding-bottom: 30px;
 }
 
-.log-title {
-	padding-top: 50px;
-	padding-bottom: 30px;
-}
-
 .description-step-wrapper {
 	border-bottom: 0.5px solid var(--basic-black);
 }
@@ -478,12 +478,13 @@ a {
 
 .other-option-wrapper label {
 	padding-left: 26px;
-	width: 70px;
+	width: 81px;
+	padding-right: 10px;
 }
 
 .other-option-wrapper {
 	display: flex;
-	align-items: flex-start;
+	align-items: flex-end;
 	justify-content: space-between;
 }
 
@@ -655,8 +656,44 @@ h3 {
 		padding: 50px 30px 50px 60px;
 	}
 
+	.title-tablet {
+		border: none;
+		padding-left: 30px;
+	}
+
 	.main-title {
 		padding: 0;
+	}
+
+	.log-title {
+		padding: 0;
+	}
+
+	.description-step-wrapper h4 {
+		padding-left: 30px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: -0.01em;
+	}
+
+	.member-registration-form {
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+
+	.wrapper-column label {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	.description-step-wrapper p {
+		padding-left: 30px;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: -0.01em;
 	}
 
 	.description-wrapper p {
@@ -768,7 +805,9 @@ h3 {
 	}
 
 	.title-wrapper {
-		padding: 60px 60px 60px 105px;
+		padding-top: 50px;
+		padding-right: 75px;
+		padding-left: 60px;
 	}
 
 	.description-wrapper p {
@@ -837,6 +876,34 @@ h3 {
 	.right-side {
 		padding-top: 40px;
 		min-width: 476px;
+	}
+
+	.member-questions-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.member-questions-left-side {
+		max-width: 475px;
+	}
+
+	.member-questions-right-side {
+		min-width: 800px;
+	}
+
+	.member-registration-form {
+		padding-left: 30px;
+		padding-right: 60px;
+	}
+
+	.description-step-wrapper p,
+	.description-step-wrapper h4 {
+		padding-left: 60px;
+		padding-bottom: 50px;
+	}
+
+	.description-step-wrapper {
+		border: none;
 	}
 
 	.footer {
