@@ -273,6 +273,7 @@ a {
 
 .header-wrapper {
 	padding: 1rem;
+	border-bottom: 0.5px solid var(--basic-black);
 }
 
 .title-wrapper,
@@ -586,6 +587,16 @@ h3 {
 .image-wrapper label {
 	padding: 0;
 }
+
+.member-registration-form button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	width: 190px;
+	height: 39px;
+}
 /* LogOut Modal Style */
 .modal {
 	width: 335px;
@@ -776,6 +787,7 @@ h3 {
 
 	.form-wrapper {
 		margin-top: 0;
+		max-height: 490px;
 	}
 
 	.desktop-wrapper {
@@ -791,5 +803,51 @@ h3 {
 		padding-right: 60px;
 		padding-left: 30px;
 		padding-bottom: 100px;
+	}
+
+	.image-wrapper-2-desktop {
+		min-width: 402px;
+		min-height: 538px;
+		background-size: auto 100%;
+		background-image: url('./img/main-image2-desktop.svg');
+		background-repeat: no-repeat;
+	}
+
+	.member-wrapper,
+	.coach-wrapper {
+		padding-left: 0;
+	}
+
+	.inner-wrapper {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 0;
+	}
+
+	.create-account {
+		padding-left: 30px;
+	}
+
+	.left-side {
+		min-width: 400px;
+		padding-left: 60px;
+		padding-top: 50px;
+	}
+
+	.right-side {
+		padding-top: 40px;
+		min-width: 476px;
+	}
+
+	.footer {
+		padding-left: 60px;
+	}
+
+	.footer-logo {
+		margin-right: 35px;
+	}
+
+	.copyright {
+		left: 60px;
 	}
 }
