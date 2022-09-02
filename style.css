@@ -152,13 +152,18 @@ a {
 	color: var(--special-color);
 }
 
+.description-wrapper {
+	margin-top: -50px;
+	border-top: 0.5px solid black;
+}
+
 .description-wrapper p {
 	margin: 0;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 28px;
-	padding-top: 50px;
+	padding-top: 100px;
 }
 
 .title-number {
@@ -300,7 +305,7 @@ a {
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: -0.01em;
-	padding-top: 20px;
+
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -491,18 +496,20 @@ a {
 
 .calendar-box {
 	background: var(--basic-white);
-	margin: 50px auto 50px auto;
-	width: 335px;
-	height: 374px;
+	min-width: 335px;
+	min-height: 374px;
 }
-.time-chooser button {
-	width: 141px;
-	height: 39px;
-	margin-bottom: 50px;
-	position: relative;
-	left: 204px;
-	bottom: 0px;
+
+.calendar-button-wrapper {
+	padding-top: 50px;
+	width: 140px;
+	margin-left: auto;
 }
+
+.time-chooser {
+	padding: 50px 20px;
+}
+
 .wrapper-column.complete-profile {
 	border: none;
 	padding: 0;
@@ -713,6 +720,7 @@ a {
 
 	.description-wrapper {
 		padding: 0 30px;
+		border: none;
 	}
 
 	.explaining-text {
@@ -826,12 +834,26 @@ a {
 		line-height: 38px;
 	}
 
+	.coach-wrapper {
+		padding-top: 25px;
+	}
+
 	.profile-item-display p,
 	.profile-item-display ul {
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 19px;
 		letter-spacing: -0.01em;
+	}
+
+	.scheluder-title {
+		border-bottom: none;
+		padding-left: 30px;
+	}
+
+	.time-chooser {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
 
@@ -872,6 +894,7 @@ a {
 		padding-top: 50px;
 		padding-right: 75px;
 		padding-left: 60px;
+		border: none;
 	}
 
 	.description-wrapper p {
@@ -881,11 +904,13 @@ a {
 	}
 
 	.description-wrapper {
-		padding-top: 50px;
+		margin: 0;
+		padding-top: 100px;
 		padding-left: 60px;
 		padding-bottom: 50px;
 		padding-right: 75px;
 		max-width: 920px;
+		border-right: 0.5px solid var(--basic-black);
 	}
 
 	.form-wrapper {
@@ -899,10 +924,12 @@ a {
 
 	.tablet-style-wrapper {
 		border: none;
+		max-height: 405px;
+		border-bottom: 0.5px solid var(--basic-black);
 	}
 
 	.explaining-text {
-		padding-top: 50px;
+		padding-top: 100px;
 		padding-right: 60px;
 		padding-left: 30px;
 		padding-bottom: 100px;
@@ -993,5 +1020,15 @@ a {
 
 	.left-side-match-wrapper {
 		border-left: 0.5px solid var(--basic-black);
+		border-right: none;
+		padding-left: 30px;
+	}
+
+	.span-wrapper {
+		padding-top: 20px;
+	}
+
+	.number-title {
+		border: none;
 	}
 }
